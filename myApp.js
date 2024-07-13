@@ -18,6 +18,11 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + "/views/index.html");
 })
 
+// task 5
+
+app.get("/json", (req, res) => {
+    res.json({"message" : "Hello json"})
+})
 
 
 
